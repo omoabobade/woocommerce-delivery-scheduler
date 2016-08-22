@@ -1,0 +1,39 @@
+div.star-holder {
+	position: relative;
+	height: 17px;
+	width: 92px;
+	background: url('stars.png?19') repeat-x bottom left;
+}
+
+div.star-holder .star-rating {
+	background: url('stars.png?19') repeat-x top left;
+	height: 17px;
+	float: left;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div.star-holder.rate .star-rate {
+	position: absolute;
+}
+
+div.star-holder.rate:hover .star-rating {
+	display: none;
+}
+
+div.star-holder .star-rate a {
+	background: none;
+	height: 17px;
+	width: 19px;
+	float: right;
+}
+
+div.star-holder .star-rate a:first-child {
+	width: 16px;
+}
+
+div.star-holder .star-rate a:hover ~ a,
+div.star-holder .star-rate a:hover {
+	background: url('stars.png?19') no-repeat top left;
+}
